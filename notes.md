@@ -13,3 +13,6 @@
 - Interpretation: The program performing the translation every time that need to be executed
 
 <Note: An IMPLEMENTATION of Python refers to "a program or environment, which provides support for the execution of programs written in the Python language, as represented by the CPython reference implementation."
+
+
+https://www.python.org/downloads/
