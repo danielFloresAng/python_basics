@@ -14,6 +14,12 @@
 
 <Note: An IMPLEMENTATION of Python refers to "a program or environment, which provides support for the execution of programs written in the Python language, as represented by the CPython reference implementation."
 
+- print a simple string message in the console: 
+      print('string message') <Output -> string message
+
+
 
 https://www.python.org/downloads/
-https://www.coursera.org/programs/analisis-de-datos-google-2024-z0buk
+https://skillsforall.com/launch?id=da0847b7-e6fc-4597-bc31-38ddd6b07a2e&tab=curriculum&view=762b60a4-885e-5830-aab5-034b4516f5c1
+
+daniel.flores.ang@gmail.com
