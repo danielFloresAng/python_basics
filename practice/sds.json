@@ -1,0 +1,19 @@
+{
+  "type": "OpenApiConnectionWebhook",
+  "inputs": {
+    "parameters": {
+      "poster": "Flow bot",
+      "location": "Channel",
+      "body/body/messageBody": "{\n    \"type\": \"AdaptiveCard\",\n    \"$schema\": \"http://adaptivecards.io/schemas/adaptive-card.json\",\n    \"version\": \"1.4\",\n    \"body\": [\n        {\n            \"type\": \"TextBlock\",\n            \"text\": \"Download Request\",\n            \"wrap\": true,\n            \"weight\": \"Bolder\",\n            \"size\": \"Medium\",\n            \"fontType\": \"Monospace\"\n        },\n        {\n            \"type\": \"TextBlock\",\n            \"text\": \"Assigned to:@{triggerBody()?['Assignedto0']?['DisplayName']}\",\n            \"wrap\": true\n        },\n        {\n            \"type\": \"FactSet\",\n            \"facts\": [\n                {\n                    \"title\": \"Acronym\",\n                    \"value\":\"@{triggerBody()?['Acronymn']}\"\n                },\n                {\n                    \"title\": \"Media Format\"\n                   \"value\":\"@{item()?['Value']}\"\n                },\n                {\n                    \"title\": \"Episodes\"\n                   \"value\":\"@{triggerBody()?['Episodes']}\"\n                },\n                {\n                    \"title\": \"Delivery Location\"\n                     \"value\":\"@{triggerBody()?['DeliveryLocation']?['Value']}\"\n                },\n                {\n                    \"title\": \"Date\"\n                     \"value\":\"@{triggerBody()?['DateReported']}\"\n                },\n                {\n                    \"title\": \"AsperaPass-Phrase\"\n                     \"value\":\"@{triggerBody()?['AsperaPass_x002d_phrase']}\"\n                },\n                {\n                    \"title\": \"Credentials\"\n                     \"value\":\"@{triggerBody()?['Credentials']}\"\n                }\n            ]\n        },\n        {\n            \"type\": \"TextBlock\",\n            \"text\": \"Details:\",\n            \"wrap\": true\n        },\n        {\n            \"type\": \"RichTextBlock\",\n            \"inlines\": [\n                {\n                    \"type\": \"TextRun\",\n                    \"text\": \"@{triggerBody()?['Status']?['Value']}\"\n                }\n            ]\n        },\n        {\n            \"type\": \"Input.ChoiceSet\",\n            \"choices\": [\n                  {\n                    \"title\": \"Issues with Assets\",\n                    \"value\": \"Choice 1\"\n                },\n                {\n                    \"title\": \"Completed\",\n                    \"value\": \"Choice 2\"\n                },\n                {\n                    \"title\": \"In Progress\",\n                    \"value\": \"Choice 3\"\n                }\n            ],\n            \"placeholder\": \"Status\"\n        },\n        {\n            \"type\": \"Input.Text\",\n            \"placeholder\": \"Enter issue Notes\"\n        },\n        {\n            \"type\": \"ActionSet\",\n            \"actions\": [\n                {\n                    \"type\": \"Action.Submit\",\n                    \"title\": \"Complete\"\n                }\n            ]\n        }\n    ]\n}",
+      "body/body/updateMessage": "Thanks for your response!",
+      "body/body/recipient/groupId": "f5729aac-c333-4126-a1a0-b30c605672ff",
+      "body/body/recipient/channelId": "19:2de124a43e3e4b74891a5a0f78c3059b@thread.tacv2"
+    },
+    "host": {
+      "apiId": "/providers/Microsoft.PowerApps/apis/shared_teams",
+      "connection": "shared_teams",
+      "operationId": "PostCardAndWaitForResponse"
+    }
+  },
+  "runAfter": {}
+}

@@ -19,7 +19,8 @@
 
 
 
-https://www.python.org/downloads/
-https://skillsforall.com/launch?id=da0847b7-e6fc-4597-bc31-38ddd6b07a2e&tab=curriculum&view=762b60a4-885e-5830-aab5-034b4516f5c1
+https://www.netacad.com/es/dashboard
 
 daniel.flores.ang@gmail.com
+
+https://www.coursera.org/programs/analisis-de-datos-google-2024-z0buk   
